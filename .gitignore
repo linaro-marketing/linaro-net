@@ -1,0 +1,8 @@
+_site
+.asset-cache
+.sass-cache
+.jekyll-metadata
+assets/resized
+production.linaro.net
+staging.linaro.net
+Gemfile.lock

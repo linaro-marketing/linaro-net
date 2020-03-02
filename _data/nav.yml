@@ -1,0 +1,15 @@
+search:
+    enabled: false
+    label: Linaro Net
+universal-nav: true
+brand:
+  image:
+    enabled: true
+    name: linaro-svg.html
+    svg: true
+  text: Linaro
+  url: /
+pages:
+    - title: View on GitHub
+      url: https://github.com/Linaro
+      external: true
