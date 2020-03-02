@@ -1,2 +1,3 @@
-# linaro-net
-A basic feature test static website.
+# Linaro.net
+
+This is the repo for a basic feature test website.

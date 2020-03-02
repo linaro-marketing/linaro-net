@@ -1,0 +1,32 @@
+title: Linaro Net
+description: >-
+  Linaro Net is a feature test website. If you're looking for information on Linaro please visit https://www.linaro.org
+url: "https://www.linaro.net"
+theme: jumbo-jekyll-theme
+email: contact@linaro.org
+github_repo: https://github.com/linaro/net
+plugins:
+  - jekyll-data
+exclude:
+  - _site
+  - CODEOWNERS
+  - build-site.sh
+  - check-links.sh
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+permalink: /:categories/:title/
+blog_images_dir: assets/images/
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      comments: false
+      image: /assets/images/social-media-image.png
+  -
+    scope:
+      path: "_posts" # an empty string here means all files in the project
+    values:
+      layout: post
+include: ['_pages']
