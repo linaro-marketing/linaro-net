@@ -16,6 +16,7 @@ window.ATL_JQ_PAGE_PROPS =  {
 },
 "fieldValues": {
     "priority": '10002',
+    "customfield_10133": window.location.href,
     "customfield_10100": {
         "requestType": {
             "id": "168"
