@@ -39,7 +39,7 @@ window.ATL_JQ_PAGE_PROPS =  {
     });
 },
 "fieldValues": {
-    "priority": '10002',
+    "priority": '10102',
     "customfield_10133": window.location.href,
     "customfield_10100": {
         "requestType": {
