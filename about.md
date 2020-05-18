@@ -32,6 +32,7 @@ window.ATL_JQ_PAGE_PROPS =  {
 <script type="text/javascript" src="https://servicedesk.linaro.org/s/764b54e4704f2020c4bab79ad08c0fc9-T/-wu5qcz/805001/5cf61e0c0b53488a73cb9c71e35eeb27/3.1.0/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-GB&collectorId=ed88928f"></script>
 -->
 
+<script src="/assets/js/vendor/jquery.js"></script>
 <script type="text/javascript">
 jQuery.ajax({
     url: "https://servicedesk.linaro.org/s/764b54e4704f2020c4bab79ad08c0fc9-T/-wu5qcz/805001/5cf61e0c0b53488a73cb9c71e35eeb27/3.1.0/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?locale=en-GB&collectorId=ed88928f",
