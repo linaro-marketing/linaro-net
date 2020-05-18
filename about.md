@@ -27,12 +27,13 @@ window.ATL_JQ_PAGE_PROPS =  {
 </script>
 -->
 
-<script type="text/javascript" src="https://servicedesk.linaro.org/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-wu5qcz/805001/5cf61e0c0b53488a73cb9c71e35eeb27/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=ed88928f"></script><script type="text/javascript" src="https://servicedesk.linaro.org/s/764b54e4704f2020c4bab79ad08c0fc9-T/-wu5qcz/805001/5cf61e0c0b53488a73cb9c71e35eeb27/3.1.0/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-GB&collectorId=ed88928f"></script>
+<script type="text/javascript" src="https://servicedesk.linaro.org/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-wu5qcz/805001/5cf61e0c0b53488a73cb9c71e35eeb27/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=ed88928f"></script>
+<script type="text/javascript" src="https://servicedesk.linaro.org/s/764b54e4704f2020c4bab79ad08c0fc9-T/-wu5qcz/805001/5cf61e0c0b53488a73cb9c71e35eeb27/3.1.0/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-GB&collectorId=ed88928f"></script>
 
 <script type="text/javascript">window.ATL_JQ_PAGE_PROPS =  {
 "triggerFunction": function(showCollectorDialog) {
     //Requires that jQuery is available! 
-    jQuery("#myCustomTrigger").click(function(e) {
+    jQuery("#feedback-button").click(function(e) {
         e.preventDefault();
         showCollectorDialog();
     });
