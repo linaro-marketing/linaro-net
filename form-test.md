@@ -68,27 +68,57 @@ font-size: 12px;font-family: Arial,Helvetica,FreeSans,'sans - serif';}
 <br>
 <div><input type='text' class='text long-field' id='customfield_10903' name='customfield_10903' placeholder='Last name' size='38' value=''/></div>
 <br>
-<div><select class='select' id='customfield_12901' name='customfield_12901'>
-<option value='' >Type of Services interested in</option>
-<option value='12805'>Upstream Services</option>
-<option value='12806'>Kernel Services</option>
-<option value='12807'>Training & Support</option>
-<option value='12808'>Security</option>
-<option value='12809'>Trusted Firmware</option>
-<option value='12810'>OP-TEE</option>
-<option value='12811'>Long Term Support Builds</option>
-<option value='12812'>Arm Server Deployment</option>
-<option value='12813'>BSPs and board bring-up</option>
-<option value='12814'>Embedded and mobile platforms</option>
-</select></div>
-<br>
 <div><input type='text' class='text long-field' id='customfield_12902' name='customfield_12902' placeholder='How can we help you?' size='38' value=''/></div>
 <br>
 <div><input type='text' class='text long-field' id='customfield_12903' name='customfield_12903' placeholder='How did you hear about Linaro?' size='38' value=''/></div>
 <br>
+<fieldset class='group'>
+<legend><span>Type of Services interested in</span></legend>
+<div class='checkbox'>
+<input type='checkbox' value='12805' name='customfield_12901' id='customfield_12901-1' class='checkbox'>
+<label for='customfield_12901-1'>Upstream Services</label>
+</div>
+<div class='checkbox'>
+<input type='checkbox' value='12806' name='customfield_12901' id='customfield_12901-2' class='checkbox'>
+<label for='customfield_12901-2'>Kernel Services</label>
+</div>
+<div class='checkbox'>
+<input type='checkbox' value='12807' name='customfield_12901' id='customfield_12901-3' class='checkbox'>
+<label for='customfield_12901-3'>Training & Support</label>
+</div>
+<div class='checkbox'>
+<input type='checkbox' value='12808' name='customfield_12901' id='customfield_12901-4' class='checkbox'>
+<label for='customfield_12901-4'>Security</label>
+</div>
+<div class='checkbox'>
+<input type='checkbox' value='12809' name='customfield_12901' id='customfield_12901-5' class='checkbox'>
+<label for='customfield_12901-5'>Trusted Firmware</label>
+</div>
+<div class='checkbox'>
+<input type='checkbox' value='12810' name='customfield_12901' id='customfield_12901-6' class='checkbox'>
+<label for='customfield_12901-6'>OP-TEE</label>
+</div>
+<div class='checkbox'>
+<input type='checkbox' value='12811' name='customfield_12901' id='customfield_12901-7' class='checkbox'>
+<label for='customfield_12901-7'>Long Term Support Builds</label>
+</div>
+<div class='checkbox'>
+<input type='checkbox' value='12812' name='customfield_12901' id='customfield_12901-8' class='checkbox'>
+<label for='customfield_12901-8'>Arm Server Deployment</label>
+</div>
+<div class='checkbox'>
+<input type='checkbox' value='12813' name='customfield_12901' id='customfield_12901-9' class='checkbox'>
+<label for='customfield_12901-9'>BSPs and board bring-up</label>
+</div>
+<div class='checkbox'>
+<input type='checkbox' value='12814' name='customfield_12901' id='customfield_12901-10' class='checkbox'>
+<label for='customfield_12901-10'>Embedded and mobile platforms</label>
+</div>
+</fieldset>
+<br>
 <input type='text' class='text long-field' id='feedback-email' name='feedback-email' placeholder='E-mail' size='38' value=''/>
 <br>
-<div align="right">
+<div>
 <input type='button' class='aui-button' value=' Ask ' onclick='addFeedback()'/>
 </div>
 </form></div>
