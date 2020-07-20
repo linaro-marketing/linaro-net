@@ -69,8 +69,8 @@ font-size: 12px;font-family: Arial,Helvetica,FreeSans,'sans - serif';}
 <br>
 <input type='text' class='text long-field' id='feedback-email' name='feedback-email' placeholder='E-mail' size='38' value=''/>
 <br>
-<div align="right">
-<input type='button' class='aui-button' value=' Ask ' onclick='addFeedback()'/>
+<div>
+<input type='button' class='aui-button' value=' Submit ' onclick='addFeedback()'/>
 </div>
 </form></div>
 <div id='feedback-back' class='aui' style='display: none'><input type='button' class='aui-button' onclick="jQuery('#feedback-main-div').show();jQuery('#feedback-response').hide();jQuery('#feedback-back').hide();" value='Back'/></div><iframe id='feedback-response' name='feedback-response' frameborder='no' style='display: none' width='500' height='250'></iframe><script type='text/javascript'>
