@@ -63,6 +63,10 @@ font-size: 12px;font-family: Arial,Helvetica,FreeSans,'sans - serif';}
 <div><TEXTAREA id='feedback-body' class='textarea long-field' name='feedback-body' ROWS='5' placeholder='You can specify the details ...'></TEXTAREA></div>
 <br> <div><input type='text' class='text long-field' id='customfield_12401' name='customfield_12401' placeholder='Company' size='38' value=''/></div>
 <br>
+<div><input type='text' class='text long-field' id='customfield_10902' name='customfield_10902' placeholder='First name' size='38' value=''/></div>
+<br>
+<div><input type='text' class='text long-field' id='customfield_10903' name='customfield_10903' placeholder='Last name' size='38' value=''/></div>
+<br>
 <input type='text' class='text long-field' id='feedback-email' name='feedback-email' placeholder='E-mail' size='38' value=''/>
 <br>
 <div align="right">
