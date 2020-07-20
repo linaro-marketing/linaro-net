@@ -2,6 +2,7 @@
 layout: default
 title: Form test page
 ---
+
 This is a simple page used to test form options.
 
 <STYLE TYPE='text/css'>
@@ -30,7 +31,7 @@ textarea { width: 100%; margin: 0; padding: 0; border-width: 1; }
 BODY, input, select, table {
 font-size: 12px;font-family: Arial,Helvetica,FreeSans,'sans - serif';}
 #captcha{margin-bottom:0;padding-bottom:0}#captcha .captcha-container{clear:none;margin:5px 0 0 0;min-height:0;overflow:hidden;padding:0} #captcha .captcha-container .captcha-image{float:left}#captcha .captcha-container .captcha-trigger{float:left} #captcha .captcha-container .captcha-trigger .content{margin:0;overflow:hidden;text-align:left;text-indent:-999em;width:0} #captcha .captcha-container .icon-reload{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAMFBMVEX///9wcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHAAAAAM3lI2AAAADnRSTlMAESIzRFVmiJmqu8zd7qUOxRYAAAB3SURBVHjaY2axe9y7PGDtDyZGg+zYTvZDDExMpvWpnZb/GZgYPb5tYPhpDxRhnMvAwPCBgYmZITMAyGJgYTyz5wMDMmAEk+7GKUwQbooAM5hxR14HKKLAwMAc/x/I2CHA4PVzH1AqqECgq+wzkLEj3GtqPyfcHAB0GR2Spl8/YwAAAABJRU5ErkJggg==")} </STYLE>
-<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/jquery.datetimepicker.css"> <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.4/build/jquery.datetimepicker.full.js'></script> <link rel="stylesheet" type="text/css" href="http://aui-cdn.atlassian.com/aui-adg/5.4.3/css/aui.css"> <div id="loading">
 <div id="loadingcontent">
 <span id='loadingspinner' class='aui-icon aui-icon-wait'>Loading...</span>
@@ -103,7 +104,7 @@ JIRACaptcha = { setup: function() { jQuery("#captcha").delegate("span.captcha-re
 
 function isValidEmail(email ) {
 
-   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)\*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
    return re.test(email);
 }
 function addFeedback() {
@@ -129,14 +130,14 @@ if (!isValidEmail(email )) {
 }   jQuery('#feedback-error').html('');
    jQuery('#feedback-main-div').hide();
    jQuery('#loading').fadeIn();
-   window.top.$('#feedback-response').attr('src','about:blank');    jQuery('#feedback-response').show();
-   jQuery('#feedback-back').show();
-   jQuery('#feedback-from-url').val(location.href);
-   jQuery('#feedback-form').submit();
-   jQuery('#feedback-response').on("load", function() {
-   jQuery('#feedback-new-issue-div').show();
-   jQuery('#loading').fadeOut();
+   window.top.$('#feedback-response').attr('src','about:blank'); jQuery('#feedback-response').show();
+jQuery('#feedback-back').show();
+jQuery('#feedback-from-url').val(location.href);
+jQuery('#feedback-form').submit();
+jQuery('#feedback-response').on("load", function() {
+jQuery('#feedback-new-issue-div').show();
+jQuery('#loading').fadeOut();
 });
-   return false;
+return false;
 }
 </script>
