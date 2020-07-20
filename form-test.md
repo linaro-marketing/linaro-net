@@ -75,44 +75,44 @@ font-size: 12px;font-family: Arial,Helvetica,FreeSans,'sans - serif';}
 <fieldset class='group'>
 <legend><span>Type of Services interested in</span></legend>
 <div class='checkbox'>
-<input type='checkbox' value='12805' name='customfield_12901' id='customfield_12901-1' class='checkbox'>
-<label for='customfield_12901-1'>Upstream Services</label>
+<input type='checkbox' value='12815' name='customfield_12904' id='customfield_12904-1' class='checkbox'>
+<label for='customfield_12904-1'>Upstream Services</label>
 </div>
 <div class='checkbox'>
-<input type='checkbox' value='12806' name='customfield_12901' id='customfield_12901-2' class='checkbox'>
-<label for='customfield_12901-2'>Kernel Services</label>
+<input type='checkbox' value='12816' name='customfield_12904' id='customfield_12904-2' class='checkbox'>
+<label for='customfield_12904-2'>Kernel Services</label>
 </div>
 <div class='checkbox'>
-<input type='checkbox' value='12807' name='customfield_12901' id='customfield_12901-3' class='checkbox'>
-<label for='customfield_12901-3'>Training & Support</label>
+<input type='checkbox' value='12817' name='customfield_12904' id='customfield_12904-3' class='checkbox'>
+<label for='customfield_12904-3'>Training & Support</label>
 </div>
 <div class='checkbox'>
-<input type='checkbox' value='12808' name='customfield_12901' id='customfield_12901-4' class='checkbox'>
-<label for='customfield_12901-4'>Security</label>
+<input type='checkbox' value='12818' name='customfield_12904' id='customfield_12904-4' class='checkbox'>
+<label for='customfield_12904-4'>Security</label>
 </div>
 <div class='checkbox'>
-<input type='checkbox' value='12809' name='customfield_12901' id='customfield_12901-5' class='checkbox'>
-<label for='customfield_12901-5'>Trusted Firmware</label>
+<input type='checkbox' value='12819' name='customfield_12904' id='customfield_12904-5' class='checkbox'>
+<label for='customfield_12904-5'>Trusted Firmware</label>
 </div>
 <div class='checkbox'>
-<input type='checkbox' value='12810' name='customfield_12901' id='customfield_12901-6' class='checkbox'>
-<label for='customfield_12901-6'>OP-TEE</label>
+<input type='checkbox' value='12820' name='customfield_12904' id='customfield_12904-6' class='checkbox'>
+<label for='customfield_12904-6'>OP-TEE</label>
 </div>
 <div class='checkbox'>
-<input type='checkbox' value='12811' name='customfield_12901' id='customfield_12901-7' class='checkbox'>
-<label for='customfield_12901-7'>Long Term Support Builds</label>
+<input type='checkbox' value='12821' name='customfield_12904' id='customfield_12904-7' class='checkbox'>
+<label for='customfield_12904-7'>Long Term Support Builds</label>
 </div>
 <div class='checkbox'>
-<input type='checkbox' value='12812' name='customfield_12901' id='customfield_12901-8' class='checkbox'>
-<label for='customfield_12901-8'>Arm Server Deployment</label>
+<input type='checkbox' value='12822' name='customfield_12904' id='customfield_12904-8' class='checkbox'>
+<label for='customfield_12904-8'>Arm Server Deployment</label>
 </div>
 <div class='checkbox'>
-<input type='checkbox' value='12813' name='customfield_12901' id='customfield_12901-9' class='checkbox'>
-<label for='customfield_12901-9'>BSPs and board bring-up</label>
+<input type='checkbox' value='12823' name='customfield_12904' id='customfield_12904-9' class='checkbox'>
+<label for='customfield_12904-9'>BSPs and board bring-up</label>
 </div>
 <div class='checkbox'>
-<input type='checkbox' value='12814' name='customfield_12901' id='customfield_12901-10' class='checkbox'>
-<label for='customfield_12901-10'>Embedded and mobile platforms</label>
+<input type='checkbox' value='12824' name='customfield_12904' id='customfield_12904-10' class='checkbox'>
+<label for='customfield_12904-10'>Embedded and mobile platforms</label>
 </div>
 </fieldset>
 <br>
