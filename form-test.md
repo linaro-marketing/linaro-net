@@ -104,9 +104,6 @@ JIRACaptcha = { setup: function() { jQuery("#captcha").delegate("span.captcha-re
 
 function isValidEmail(email ) {
     return true;
-
-<!-- var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)\*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-   return re.test(email); -->
 }
 function addFeedback() {
     var message = '';
@@ -131,14 +128,14 @@ if (!isValidEmail(email )) {
 }   jQuery('#feedback-error').html('');
    jQuery('#feedback-main-div').hide();
    jQuery('#loading').fadeIn();
-   window.top.$('#feedback-response').attr('src','about:blank'); jQuery('#feedback-response').show();
-jQuery('#feedback-back').show();
-jQuery('#feedback-from-url').val(location.href);
-jQuery('#feedback-form').submit();
-jQuery('#feedback-response').on("load", function() {
-jQuery('#feedback-new-issue-div').show();
-jQuery('#loading').fadeOut();
+   window.top.$('#feedback-response').attr('src','about:blank');    jQuery('#feedback-response').show();
+   jQuery('#feedback-back').show();
+   jQuery('#feedback-from-url').val(location.href);
+   jQuery('#feedback-form').submit();
+   jQuery('#feedback-response').on("load", function() {
+   jQuery('#feedback-new-issue-div').show();
+   jQuery('#loading').fadeOut();
 });
-return false;
+   return false;
 }
 </script>
