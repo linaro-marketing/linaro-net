@@ -1,4 +1,4 @@
-name: BuildAndPublishSite
+name: PullRequestAction
 
 on:
   # push:
