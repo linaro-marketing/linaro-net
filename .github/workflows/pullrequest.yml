@@ -1,0 +1,22 @@
+name: PullRequestAction
+
+on:
+  # push:
+  #   branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Pull PR repo and merge with original branch
+        run: /srv/github-action-scripts/merge-test-branch.sh
+      
+      - name: Build site
+        run: /srv/github-action-scripts/build-jekyll-site.sh
+        with:
+          env-file: .github-env
