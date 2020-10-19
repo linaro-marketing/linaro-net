@@ -13,11 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Display workspace directory contents
-        run: cd "$GITHUB_WORKSPACE" && ls
-
-      - name: Display environment
-        run: env
-
-      - name: Output event payload
-        run: cat "$GITHUB_EVENT_PATH"
+      - name: Pull PR repo and merge with original branch
+        run: /srv/github-action-scripts/merge-test-branch.sh
+      
+      - name: Build site
+        run: /srv/github-action-scripts/build-jekyll-site.sh
+        with:
+          env-file: .github-env
