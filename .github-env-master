@@ -1,0 +1,3 @@
+AWS_STATIC_SITE_URL="production-linaro-net"
+JEKYLL_ENV="production"
+SITE_URL="production.linaro.net"
