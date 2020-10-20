@@ -19,4 +19,4 @@ jobs:
       - name: Build site
         run: /srv/github-action-scripts/build-jekyll-site.sh
         env:
-          GITHUB_TOKEN: $${{ secrets.GITHUB_TOKEN }}
+          TOKEN: $${{ secrets.GITHUB_TOKEN }}
