@@ -25,3 +25,8 @@ jobs:
         run: /srv/github-action-scripts/build-jekyll-site.sh
         env:
           TOKEN: $${{ secrets.GITHUB_TOKEN }}
+
+      - name: Don't kill job
+        run: sleep 1h
+        env:
+          TOKEN: $${{ secrets.GITHUB_TOKEN }}
