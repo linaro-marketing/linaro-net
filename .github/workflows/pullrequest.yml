@@ -7,7 +7,6 @@ on:
 jobs:
   build:
     runs-on: self-hosted
-
     steps:
       - uses: actions/checkout@v2
 
@@ -18,6 +17,13 @@ jobs:
         run: /srv/github-action-scripts/build-jekyll-site.sh
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  check-links:
+    needs: build
+    runs-on: self-hosted
+    steps:
+      - name: Initialise environment
+        run: cat ".github-env-$GITHUB_BASE_REF" >> $GITHUB_ENV
 
       - name: Check links
         run: /srv/github-action-scripts/check-links.sh
