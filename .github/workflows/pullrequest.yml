@@ -36,4 +36,4 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Check routing rules
-        run: /srv/githib-action-scripts/test-routing-rules.sh
+        run: /srv/github-action-scripts/test-routing-rules.sh
