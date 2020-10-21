@@ -6,3 +6,4 @@ assets/resized
 production.linaro.net
 staging.linaro.net
 Gemfile.lock
+node_modules
