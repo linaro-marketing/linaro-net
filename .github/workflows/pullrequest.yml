@@ -30,3 +30,10 @@ jobs:
 
       - name: Check links
         run: /srv/github-action-scripts/check-links.sh
+
+  test-routing-rules:
+    needs: check-links
+    runs-on: self-hosted
+    steps:
+      - name: Check routing rules
+        run: /srv/githib-action-scripts/test-routing-rules.sh
