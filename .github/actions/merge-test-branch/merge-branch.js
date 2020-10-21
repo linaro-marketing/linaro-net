@@ -1,6 +1,6 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-import { execSync } from 'child_process';
+const execSync = require('child_process').execSync;
 
 try {
     const incoming_owner = github.context.payload.pull_request.head.repo.owner.login;
