@@ -6,3 +6,4 @@ description: |
 runs:
   using: "node12"
   main: 'merge-branch.js'
+  post: 'cleanup-branch.js'
