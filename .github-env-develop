@@ -1,0 +1,3 @@
+AWS_STATIC_SITE_URL=staging-linaro-net
+JEKYLL_ENV=staging
+SITE_URL=staging.linaro.net
