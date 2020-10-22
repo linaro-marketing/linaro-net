@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: env
-      
+
       # - name: Initialise environment
       #   run: cat ".github-env-$GITHUB_BASE_REF" >> $GITHUB_ENV
 
@@ -28,19 +28,19 @@ jobs:
       # - name: Preserve build
       #   run: /srv/github-action-scripts/preserve-site-build.sh
 
-  check-links:
-    needs: build
-    runs-on: self-hosted
-    steps:
-      - name: Initialise environment
-        run: cat ".github-env-$GITHUB_BASE_REF" >> $GITHUB_ENV
+  # check-links:
+  #   needs: build
+  #   runs-on: self-hosted
+  #   steps:
+  #     - name: Initialise environment
+  #       run: cat ".github-env-$GITHUB_BASE_REF" >> $GITHUB_ENV
 
-      - name: Check links
-        run: /srv/github-action-scripts/check-links.sh
+  #     - name: Check links
+  #       run: /srv/github-action-scripts/check-links.sh
 
-  test-routing-rules:
-    needs: check-links
-    runs-on: self-hosted
-    steps:
-      - name: Check routing rules
-        run: /srv/github-action-scripts/test-routing-rules.sh
+  # test-routing-rules:
+  #   needs: check-links
+  #   runs-on: self-hosted
+  #   steps:
+  #     - name: Check routing rules
+  #       run: /srv/github-action-scripts/test-routing-rules.sh
