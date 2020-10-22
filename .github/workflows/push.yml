@@ -64,5 +64,8 @@ jobs:
     needs: sync-to-s3-staging
     runs-on: self-hosted
     steps:
+      - name: Initialise environment
+        run: cat ".github-env-${GITHUB_REF##*/}" >> $GITHUB_ENV
+
       - name: Upload to S3
         run: /srv/github-action-scripts/upload-to-s3-root.sh
