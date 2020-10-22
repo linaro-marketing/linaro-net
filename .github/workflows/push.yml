@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Directory push/pop
-        uses: linaro-its/directory-push-and-pop@v1
+        uses: linaro-its/directory-push-and-pop@v1.1
         with:
           cacheDirectory: /srv/site-builds
           namedDirectory: $SITE_URL
