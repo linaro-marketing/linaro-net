@@ -2,9 +2,7 @@ name: PullRequestAction
 
 on:
   pull_request_target:
-    branches:
-      - master
-      - develop
+    branches: [ main, master, develop ]
 
 jobs:
   build:

@@ -1,9 +1,9 @@
-name: ClosePRAction
+name: ClosePullRequestAction
 
 on: 
   pull_request_target:
     types: [closed]
-    branches: [ master ]
+    branches: [ main, master, develop ]
 
 jobs:
   close:
