@@ -69,3 +69,13 @@ jobs:
 
       - name: Upload to S3
         run: /srv/github-action-scripts/upload-to-s3-root.sh
+
+  set-up-lambda-redirect:
+    needs: update-to-s3
+    runs-on: self-hosted
+    steps:
+      - name: Initialise environment
+        run: cat ".github-env-${GITHUB_REF##*/}" >> $GITHUB_ENV
+
+      - name: Set up Lambda redirect
+        run: /srv/github-action-scripts/set-up-lambda-redirect.sh /srv/site-builds/${{ env.SITE_URL }}
