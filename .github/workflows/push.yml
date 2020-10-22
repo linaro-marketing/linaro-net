@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
-      - run: env
+      - run: IFS='/' && read -a FOO <<< "$GITHUB_REF" && BRANCH="${FOO[2]}" && unset IFS && echo "$BRANCH"
 
       # - name: Initialise environment
       #   run: cat ".github-env-$GITHUB_BASE_REF" >> $GITHUB_ENV
