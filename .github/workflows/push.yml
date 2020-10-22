@@ -79,3 +79,23 @@ jobs:
 
       - name: Set up Lambda redirect
         run: /srv/github-action-scripts/set-up-lambda-redirect.sh /srv/site-builds/${{ env.SITE_URL }}
+
+  set-up-security-headers:
+    needs: set-up-lambda-redirect
+    runs-on: self-hosted
+    steps:
+      - name: Initialise environment
+        run: cat ".github-env-${GITHUB_REF##*/}" >> $GITHUB_ENV
+
+      - name: Set up security headers
+        run: cd /srv/github-action-scripts && pipenv run python lambda-security-headers.py
+
+  invalidate-cloudfront:
+    needs: set-up-security-headers
+    runs-on: self-hosted
+    steps:
+      - name: Initialise environment
+        run: cat ".github-env-${GITHUB_REF##*/}" >> $GITHUB_ENV
+
+      - name: Invalidate CloudFront cache
+        run: /srv/github-action-scripts/invalidate-cloudfront.sh

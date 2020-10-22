@@ -1,5 +1,6 @@
 AWS_STATIC_SITE_PROFILE=linaro-net-buildbot
 AWS_STATIC_SITE_URL=production-linaro-net
 CF_DIST_ID_STATIC_LO=E1UQ2M948IR3LT
+CLOUDFRONT_ADD_SECURITY_HEADERS_ARN=arn:aws:lambda:us-east-1:691071635361:function:cloudfront-add-security-headers:8
 JEKYLL_ENV=production
 SITE_URL=production.linaro.net
