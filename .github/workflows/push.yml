@@ -3,9 +3,7 @@ name: PushAction
 on:
   push:
     branches: [ main, master, develop ]
-  workflow_run:
-    branches: [ main, master, develop ]
-    types: [ requested ]
+  workflow_dispatch:
 
 jobs:
   build:
