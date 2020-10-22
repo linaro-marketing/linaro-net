@@ -11,6 +11,8 @@ jobs:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Initialise environment
         run: cat ".github-env-$GITHUB_BASE_REF" >> $GITHUB_ENV
