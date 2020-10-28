@@ -13,8 +13,14 @@ jobs:
         with: 
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Fetch git repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          path: website
+
       - name: Initialise environment
-        run: cat ".github-env-$GITHUB_BASE_REF" >> $GITHUB_ENV
+        run: cat "$GITHUB_WORKSPACE/website/.github-env-$GITHUB_BASE_REF" >> $GITHUB_ENV
 
       - run: env
 
@@ -22,11 +28,6 @@ jobs:
         run: /srv/github-action-scripts/init-deploy-preview.sh
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Fetch git repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
       - name: Merge test branch
         uses: linaro-its/merge-test-branch@v1
@@ -41,7 +42,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Initialise environment
-        run: cat ".github-env-$GITHUB_BASE_REF" >> $GITHUB_ENV
+        run: cat "$GITHUB_WORKSPACE/website/.github-env-$GITHUB_BASE_REF" >> $GITHUB_ENV
 
       - name: Check links
         run: /srv/github-action-scripts/check-links.sh
