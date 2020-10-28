@@ -2,6 +2,7 @@ source "https://rubygems.org"
 gem "jumbo-jekyll-theme", "5.6.9.2"
 group :jekyll_plugins do
   gem "jekyll-data"
+  gem "kramdown-parser-gfm"
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 #gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
