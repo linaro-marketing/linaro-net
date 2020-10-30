@@ -3,6 +3,8 @@ name: PushAction
 on:
   push:
     branches: [ main, master, develop ]
+    paths-ignore:
+      - .github/workflows/schedule-build.yml
   workflow_dispatch:
 
 jobs:
