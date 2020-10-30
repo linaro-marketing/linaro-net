@@ -15,9 +15,8 @@ name: ScheduledBuild
 
 on:
   schedule:
-    - cron: '50 11 30 10 *'
-  schedule:
-    - cron: '55 11 30 10 *'
+    - cron: '05 12 30 10 *'
+    - cron: '15 12 30 10 *'
 
 jobs:
   trigger:
