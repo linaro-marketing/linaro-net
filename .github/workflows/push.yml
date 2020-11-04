@@ -27,7 +27,7 @@ jobs:
       - run: env
 
       - name: Directory push/pop
-        uses: linaro-its/directory-push-and-pop@v2.3
+        uses: linaro-its/directory-push-and-pop@v2.4
         with:
           cacheDirectory: /srv/site-builds
           namedDirectory: ${{ env.SITE_URL }}
