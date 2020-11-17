@@ -1,15 +1,28 @@
+universal_nav: true
 search:
-    enabled: false
-    label: Linaro Net
-universal-nav: true
-brand:
-  image:
-    enabled: true
-    name: linaro-svg.html
-    svg: true
-  text: Linaro
-  url: /
+  enabled: true
+  label: Linaro
 pages:
-    - title: View on GitHub
-      url: https://github.com/Linaro
-      external: true
+  - title: Jekyll Theme Features
+    url: https://www.github.com/linaro-marketing/linaro-jekyll-theme
+    external: true
+  - title: Jekyll Theme Features
+    options:
+      - text: Page Headers
+        options:
+          - text: Video Header
+            url: /features/video-header/
+          - text: Slider Header
+            url: /features/slider-header/
+          - text: Background Image Header
+            url: /features/background-image-header/
+          - text: Header
+            url: /features/header/
+          - text: Breadcrumb
+            url: /features/breadcrumb/
+          - text: No Header
+            url: /features/no-header/
+      - text: Layouts
+        options:
+          - text: Flow
+            url: /flow/
