@@ -1,0 +1,35 @@
+.fessWrapper .media {
+    display: block;
+}
+#wrapper .fessWrapper .media h3 a{
+  color:#0b0b0b !important;
+}
+.fessWrapper .pagination > .active > a, .fessWrapper .pagination > .active > a:focus, .fessWrapper .pagination > .active > a:hover, .fessWrapper .pagination > .active > span, .fessWrapper .pagination > .active > span:focus, .fessWrapper .pagination > .active > span:hover {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #9c3;
+    border-color: #eee;
+}
+.fessWrapper .pagination > li > a, .fessWrapper .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.5;
+    color: #999;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.fessForm tbody td div {
+  overflow: hidden;
+}
+.searchButton.btn.btn-primary {
+  background-color: #98cc33;
+  border: 0;
+  width: auto;
+  height: 40px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
