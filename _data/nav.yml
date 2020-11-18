@@ -5,6 +5,8 @@ search:
 pages:
   - title: Jekyll Theme Features
     url: https://www.github.com/linaro-marketing/linaro-jekyll-theme
+  - title: Blog
+    url: /blog/
     external: true
   - title: Jekyll Theme Features
     options:
